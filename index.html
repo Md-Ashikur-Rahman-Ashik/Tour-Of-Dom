@@ -6,7 +6,7 @@
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <style>
-      li {
+      .fruitsContainer li {
         color: yellowgreen;
       }
 
@@ -34,7 +34,7 @@
           <li>Bonobash</li>
         </ul>
       </section>
-      <section>
+      <section class="fruitsContainer">
         <h1 id="fruitsTitle">Fruits</h1>
         <ul>
           <li>Apple</li>
@@ -45,10 +45,10 @@
       <section>
         <h1>Places I like to visit</h1>
         <ul>
-          <li>Sundarban</li>
-          <li>Bandarban</li>
-          <li>Kataban</li>
-          <li>Shalban</li>
+          <li class="importantPlaces">Sundarban</li>
+          <li class="importantPlaces">Bandarban</li>
+          <li class="importantPlaces">Kataban</li>
+          <li class="importantPlaces">Shalban</li>
         </ul>
       </section>
     </main>
@@ -68,6 +68,18 @@
       //     // console.log(li);
       //     console.log(li.innerText);
       // }
+      const places = document.getElementsByClassName("importantPlaces");
+      // console.log(places);
+      for(let place of places){
+        // console.log(place);
+        // console.log(place.innerText);
+      }
+      const someLi = document.querySelectorAll(".fruitsContainer li");
+      // console.log(someLi);
+      for(let li of someLi){
+        // console.log(li);
+        console.log(li.innerText);
+      }
     </script>
   </body>
 </html>
