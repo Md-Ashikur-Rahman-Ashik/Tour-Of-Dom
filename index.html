@@ -25,7 +25,7 @@
         Aspernatur?
       </p>
     </header>
-    <main>
+    <main id="mainContent">
       <section>
         <h1>My awesome DOM</h1>
         <ul>
@@ -42,9 +42,9 @@
           <li>Carrot</li>
         </ul>
       </section>
-      <section>
+      <section id="placesContainer">
         <h1>Places I like to visit</h1>
-        <ul>
+        <ul id="placesList">
           <li class="importantPlaces">Sundarban</li>
           <li class="importantPlaces">Bandarban</li>
           <li class="importantPlaces">Kataban</li>
@@ -68,17 +68,17 @@
       //     // console.log(li);
       //     console.log(li.innerText);
       // }
-      const places = document.getElementsByClassName("importantPlaces");
+      // const places = document.getElementsByClassName("importantPlaces");
       // console.log(places);
-      for(let place of places){
+      // for(let place of places){
         // console.log(place);
         // console.log(place.innerText);
-      }
+      // }
       const someLi = document.querySelectorAll(".fruitsContainer li");
       // console.log(someLi);
       for(let li of someLi){
         // console.log(li);
-        console.log(li.innerText);
+        // console.log(li.innerText);
       }
     </script>
   </body>
